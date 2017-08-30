@@ -4,7 +4,7 @@ permalink:      /:year-:month-:day/:title
 # Setup
 title:          Echoer
 paginate:       5
-baseurl:        ""
+baseurl:        "/"
 url:            "https://brianmcfeeley.github.io/echoer"
 
 # Assets
