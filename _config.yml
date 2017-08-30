@@ -4,8 +4,8 @@ permalink:      /:year-:month-:day/:title
 # Setup
 title:          Echoer
 paginate:       5
-baseurl:        ""
-url:            "https://brianmcfeeley.github.io/echoer"
+baseurl:        "/"
+url:            "http://echoer.io"
 
 # Assets
 sass:
@@ -18,7 +18,7 @@ markdown:       kramdown
 # About
 author:
   name:         Brian McFeeley
-  url:          http://example.com
+  url:          http://echoer.io
   email:        brianmcfeeley@gmail.com
 
 # Custom vars
