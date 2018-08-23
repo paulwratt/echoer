@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head-docs.html %}
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.docsurl }}/">
+          <h2 class="nav-title">Docs @ {{ site.docstitle }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Posts</a></li>
+          <li><a href="{{ '/about' | prepend: site.url }}">About</a></li>
+          <li><a href="{{ site.repo }}/">Repo</a></li>
+          <li><a href="{{ site.docsurl }}/">Docs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      <span class="copytime">
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="http://github.com/paulwratt/echoer-tale-docs">Echoer Tale Docs</a> theme.
+      </span>
+      <div class="wrapper-footer">
+        <div class="container">
+          {% include svg-icons.html %}
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

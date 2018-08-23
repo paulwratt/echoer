@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    {% if page.title == "Home" %}
+      Docs &middot; {{ site.title }}
+    {% else %}
+      {{ page.title }} &middot; Docs &middot; {{ site.docstitle }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.docs.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+</head>
