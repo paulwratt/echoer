@@ -7,11 +7,13 @@
     <nav class="nav">
       <div class="nav-container">
         <a href="{{ site.baseurl }}/">
-          <h2 class="nav-title">{{ site.title }}</h2>
+          <h2 class="nav-title">Blog @ {{ site.title }}</h2>
         </a>
         <ul>
-          <li><a href="{{ '/about' | prepend: site.url }}">About</a></li>
           <li><a href="{{ site.baseurl }}/">Posts</a></li>
+          <li><a href="{{ '/about' | prepend: site.url }}">About</a></li>
+          <li><a href="{{ site.repo }}/">Repo</a></li>
+          <li><a href="{{ site.docsurl }}/">Docs</a></li>
         </ul>
     </div>
   </nav>
@@ -22,7 +24,7 @@
 
     <footer>
       <span>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="http://github.com/paulwratt/echoer-tale-docs">Echoer Tale Docs</a> theme.
       </span>
     </footer>
   </body>
